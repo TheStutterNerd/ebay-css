@@ -40,37 +40,15 @@
     color: red;
 }
 
- /* Create three equal columns that floats next to each other */
-.column {
-    color: white;
-    font-family: sans-serif;
-    float: left;
-    width: 33.33%;
-}
 
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-  }
-}
-
-
-.tabs {
+.tsn-tabs {
     color: white;
     display: flex;
     flex-wrap: wrap;
     margin: 30px;
 }
 
-.tabs label {
+.tsn-tabs label {
     color: white;
     order: 1;
     display: block;
@@ -82,7 +60,7 @@
     transition: background ease 0.2s;
 }
 
-.tabs .tab {
+.tsn-tabs .tsn-tab {
     order: 99;
     flex-grow: 1;
     width: 100%;
@@ -91,15 +69,15 @@
     background: #202224;
 }
 
-.tabs input[type="radio"] {
+.tsn-tabs input[type="radio"] {
     display: none;
 }
 
-.tabs input[type="radio"]:checked + label {
+.tsn-tabs input[type="radio"]:checked + label {
     background: #202224;
 }
 
-.tabs input[type="radio"]:checked + label + .tab {
+.tsn-tabs input[type="radio"]:checked + label + .tsn-tab {
     display: block;
 }
 
@@ -117,15 +95,15 @@
 }
 
 
-div.gallery {
+div.tsn-gallery {
     border: 1px solid red;
 }
 
-div.gallery:hover {
+div.tsn-gallery:hover {
     border: 1px solid white;
 }
 
-div.gallery img {
+div.tsn-gallery img {
     width: 100%;
     height: auto;
 }
@@ -140,21 +118,21 @@ div.desc {
     box-sizing: border-box;
 }
 
-.responsive {
+.tsn-responsive {
     padding: 0 6px;
     float: left;
     width: 24.99999%;
 }
 
 @media only screen and (max-width: 700px) {
-  .responsive {
+  .tsn-responsive {
     width: 49.99999%;
     margin: 6px 0;
   }
 }
 
 @media only screen and (max-width: 500px) {
-  .responsive {
+  .tsn-responsive {
     width: 100%;
   }
 }
